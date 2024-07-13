@@ -1,0 +1,376 @@
+/*================================================
+    Template Name: Paul lapkin - Portfolio Template
+    Template URL:
+    Description: An Awesome Portfolio Template
+    Author: Asaduzzaman Khan
+    Author URI:
+    Support: uzzalk2525@gmail.com
+    Veresion: 1.0
+================================================*/
+
+/*================================================
+    
+    CSS INDEX
+    =========
+    
+    1. COMMON CSS
+    2. ASAD
+    3. ABOUT
+    4. PROCESS
+    5. EXPERIENCE
+    6. PORTFOLIO
+
+================================================*/
+
+/*================================================
+
+    1. COMMON CSS
+
+================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 650%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 400%;
+}
+
+h3 {
+    font-size: 260%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+h4 {
+    font-size: 160%;
+}
+
+
+/* REUSABLE COMPONENTS*/
+
+.row {
+    max-width: 1180px;
+    margin: auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.btn:link,
+.btn:visited {
+    width: 200px;
+    background: #ff2b4a;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 160%;
+    padding: 10px 0;
+    border: 2px solid #ff2b4a;
+    transition: .5s;
+}
+
+.btn:hover,
+.btn:active {
+    background: transparent;
+    color: #ff2b4a;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    font-size: 160%;
+    color: #6f6f6f;
+    margin-top: 15px;
+}
+
+/*================================================
+
+    2. ASAD
+
+================================================*/
+
+
+#asad {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/asad.jpg) no-repeat center / cover;
+}
+
+.logo {
+    float: left;
+    height: 45px;
+    margin-top: 45px;
+}
+
+.nav-icon {
+    color: #fff;
+    float: right;
+    margin-top: 45px;
+    
+}
+
+.nav-icon ion-icon {
+    font-size: 40px;
+    border: 1px solid #fff;
+}
+
+.asad-text-box {
+    width: 1180px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+h1::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+}
+
+
+.asad-text-box span {
+    font-size: 370%;
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/*================================================
+
+    3. ABOUT
+
+================================================*/
+
+
+.grid-about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+}
+
+.asad {
+    width: 100%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 67% 92%, 34% 92%, 0% 70%, 0% 30%);
+}
+
+.intro {
+    font-size: 180%;
+    color: #737373;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 160%;
+    color: #737373;
+    font-weight: 400;
+    margin: 30px 0;
+    width: 90%;
+}
+
+
+/*================================================
+
+    4. PROCESS
+
+================================================*/
+
+
+#process {
+    background: #e3e2e2;
+}
+
+.grid-process-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-process-items {
+    padding: 80px 0; 
+}
+
+.grid-process-items:nth-child(1) {
+    background: #10c6fc;
+}
+
+.grid-process-items:nth-child(2) {
+    background: #835aeb;
+}
+
+.grid-process-items:nth-child(3) {
+    background: #002453;
+}
+
+.grid-process-items:nth-child(4) {
+    background: #ff2b4a;
+}
+
+.grid-process-items .icon {
+    margin-bottom: 30px;
+}
+
+
+.grid-process-items h4 {
+    text-transform: uppercase;
+}
+
+
+/*================================================
+
+    5. EXPERIENCE
+
+================================================*/
+
+#experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.00)), url(img/experience.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.grid-experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    color: #fff;
+}
+
+.grid-experience-items,
+.grid-education-items {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 45px 30px;
+}
+
+.job h4,
+.education h4 {
+    font-size: 180%;
+}
+
+.job span,
+.education span {
+    font-size: 160%;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+.job p,
+.education p {
+    font-size: 160%;
+}
+
+
+#experience hr {
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 30px 0;
+}
+
+
+/*================================================
+
+    6. PORTFOLIO
+
+================================================*/
+
+
+.grid-portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.grid-portfolio-items {
+    
+}
+
+.grid-portfolio-items img {
+    width: 100%;
+    height: 250px;
+}
+
+.grid-portfolio-items:nth-child(5) {
+    grid-column: 1/3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
